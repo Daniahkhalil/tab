@@ -1,0 +1,27 @@
+
+  
+function getUniqueTags(data){
+     tags=[]
+for(i=0; i< data.length;i++){
+    
+
+   tags.push(data[i].tags)
+
+}
+   
+tags=tags.flat()
+new_tags=[]
+ 
+for(i=0; i< tags.length;i++){
+
+         if(!new_tags.includes(tags[i])){
+               new_tags.push(tags[i])
+         }
+       
+}
+console.log(new_tags)
+ 
+}
+
+function getUniqueTags(data)
+
